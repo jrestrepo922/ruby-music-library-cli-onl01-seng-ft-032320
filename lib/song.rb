@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name
   attr_reader :artist, :genre
@@ -41,6 +42,12 @@ class Song
 
     else
       genre.songs = self
-    end 
+    end
   end
+
+  def self.find_by_name
+    self.all
+    binding.pry
+  end 
+  
 end
