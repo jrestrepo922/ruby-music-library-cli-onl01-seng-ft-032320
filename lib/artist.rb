@@ -50,8 +50,16 @@ class Artist
   end
 
   def genres
-    Genre.all
-    #binding.pry
+    #Genre.all
+    @new_array = []
+    songs.each { |song|
+      if @new_array.include?(song.genre)
+        nil 
+      else 
+        @new_array << song.genre 
+      end 
+    }
+    @new_array
   end
 
 end
