@@ -39,11 +39,11 @@ class Artist
     if song.artist
 
     else
-    song.artist = self  # the song instance artist property was given an instace of the artist
+    song.artist = self  # the song instance artist property was given an instace of the artist. The song knows it has an artist
       if songs.include?(song)
 
       else
-        self.songs=(song)  # calling the artist instance setter method to shovel the instance of a song into the @songs array
+        self.songs=(song)  # calling the artist instance setter method to shovel the instance of a song into the @songs array. THe artist has added this song to a list of songs
       end
     end
   end
