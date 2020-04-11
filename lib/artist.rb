@@ -26,4 +26,8 @@ class Artist
     new_artist.save
     new_artist
   end
+
+  def songs
+    @songs
+  end
 end
