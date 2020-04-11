@@ -49,14 +49,14 @@ class Song
     self.all.find{|song| song.name == song_name}
   end
 
-  def find_or_create_by_name(song_name)
+  def self.find_or_create_by_name(song_name)
     if self.find_by_name(song_name).include?(self)
       self.find_by_name(song_name)
     else
       new_song = Song.new(song_name)
       new_song
     end
-    binding.pry
+    #binding.pry
   end
 
 
