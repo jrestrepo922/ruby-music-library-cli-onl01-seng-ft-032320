@@ -32,7 +32,7 @@ class Song
   def artist=(artist) # intance of an artist
     @artist = artist
     artist.add_song(self) #.add_song gives a artist a song and shovels the instance of that song into the @songs array of the artist
-    
+
     # @artist = new_artist # this provides the song with its artist but the artist instance still does not know its song.
     # new_artist.songs = self
 
