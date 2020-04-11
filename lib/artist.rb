@@ -35,10 +35,10 @@ class Artist
     @songs << new_song
   end
 
-  def add_song(song)  #instance of a song 
-    
+  def add_song(song)  #instance of a song
+
     self.songs=(song)
 
-    
+
   end
 end
