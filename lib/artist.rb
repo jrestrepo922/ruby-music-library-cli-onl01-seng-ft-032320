@@ -53,14 +53,14 @@ class Artist
     #Genre.all
 
     @new_array = []
-    Song.all.each {|song| 
-      if @new_array.include?(song.genre) 
+    Song.all.each {|song|
+      if @new_array.include?(song.genre)
         nil
-      else 
+      else
         if song.artist == self  #if the songs artirst is equal to this artist instance than true
           @new_array << song.genre
-        end 
-      end 
+        end
+      end
     }
 
 
