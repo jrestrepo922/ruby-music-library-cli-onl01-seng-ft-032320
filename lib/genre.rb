@@ -31,7 +31,7 @@ class Genre
     @songs
   end
 
-  def songs=(new_song)
+  def songs=(new_song) #setter method that shovels a song into the @songs array
     songs << new_song
   end
 
