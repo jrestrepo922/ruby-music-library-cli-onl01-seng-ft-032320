@@ -55,7 +55,7 @@ class Song
       else
         self.create(song_name)
       end
-    #binding.pry
+    binding.pry
   end
 
 
