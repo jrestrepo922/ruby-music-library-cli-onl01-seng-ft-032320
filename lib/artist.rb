@@ -63,6 +63,7 @@ class Artist
       end
     }
     @new_array
+    binding.pry
   end
 
 end
