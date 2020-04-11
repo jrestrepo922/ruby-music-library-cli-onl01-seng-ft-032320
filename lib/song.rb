@@ -56,7 +56,7 @@ class Song
       new_song = Song.new(song_name)
       new_song
     end
-    #binding.pry
+    binding.pry
   end
 
 
