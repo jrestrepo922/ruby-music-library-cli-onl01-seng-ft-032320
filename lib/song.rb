@@ -50,13 +50,7 @@ class Song
   end
 
   def self.find_or_create_by_name(song_name)
-    if self.find_by_name(song_name).include?(self)
-      self.find_by_name(song_name)
-    else
-      new_song = Song.new(song_name)
-      new_song
-    end
-    binding.pry
+    self.find_by_name(song_name)  || self.create(song_name)
   end
 
 
