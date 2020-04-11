@@ -40,7 +40,7 @@ class Artist
 
     else
     song.artist = self  # the song instance artist property was given an instace of the artist
-    self.songs(song)    # calling the artist instance setter method to shovel the instance of a song into the @songs array
+    self.songs=(song)    # calling the artist instance setter method to shovel the instance of a song into the @songs array
     end
   end
 end
