@@ -50,7 +50,7 @@ class Artist
 
   def genres
     #Genre.all
-    binding.pry
+    
     @new_array = []
     Song.all.each {|song|   #songs intances have name, instances of artist and instance of genre
       if @new_array.include?(song.genre)
