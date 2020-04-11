@@ -40,7 +40,7 @@ class Artist
     song.artist = self ulsess song.arstist
     songs << song unless songs.include?(song)
 
-    
+
     # if song.artist
     #   return
     # else
