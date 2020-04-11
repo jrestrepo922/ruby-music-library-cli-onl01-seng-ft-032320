@@ -26,4 +26,9 @@ class Genre
     new_genre.save
     new_genre
   end
+
+  def songs
+    @songs
+  end
+
 end
