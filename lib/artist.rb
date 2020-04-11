@@ -37,7 +37,7 @@ class Artist
 
   def add_song(song)  #instance of a song
 
-    song.artist = self unless song.arstist
+    song.artist = self unless song.artist
     songs << song unless songs.include?(song)
 
 
