@@ -38,6 +38,9 @@ class Artist
   def add_song(song)  #instance of a song
 
     song.artist = self ulsess song.arstist
+    songs << song unless songs.include?(song)
+
+    
     # if song.artist
     #   return
     # else
