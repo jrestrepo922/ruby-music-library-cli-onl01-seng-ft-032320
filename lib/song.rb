@@ -31,7 +31,7 @@ class Song
 
   def artist=(new_artist) # intance of an artist
     @artist = new_artist # this provides the song with its artist but the artist instance still does not know its song.
-    new_artist.
+    new_artist.songs = self
 
   end
 end
