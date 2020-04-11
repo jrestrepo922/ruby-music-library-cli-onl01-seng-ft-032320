@@ -5,9 +5,9 @@ class Song
 
   @@all = []
 
-  def initialize(name, *artist)
+  def initialize(name, artist =  nil )
     @name = name
-    @artist = artist
+    self.artist = artist if artist # this states that the instance setter method .artist will only be run if artist equals true (nil will make it false) so default argument will make it false and not run.
     save
   end
 
