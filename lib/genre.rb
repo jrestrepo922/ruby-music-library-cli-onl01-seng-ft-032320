@@ -33,7 +33,7 @@ class Genre
 
   def songs=(new_song)
     songs << new_song
-  end 
-    
+  end
+
 
 end
