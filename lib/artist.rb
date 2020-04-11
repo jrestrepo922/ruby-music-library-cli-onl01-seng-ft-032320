@@ -40,5 +40,6 @@ class Artist
 
     else
     song.artist = self if song.artist
+    end 
   end
 end
