@@ -37,6 +37,9 @@ class Song
 
   def genre=(genre) # this is talking an genre instance
     @genre = genre
-    genre.songs = self
+    if genre.songs.include?(self)
+
+    else 
+      genre.songs = self
   end
 end
