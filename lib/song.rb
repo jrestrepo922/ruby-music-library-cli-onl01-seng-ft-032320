@@ -29,9 +29,9 @@ class Song
     new_song # returns the new song.
   end
 
-  def artist=(new_artist) # intance of an artist
-
-    new_artist.add_song(self)
+  def artist=(artist) # intance of an artist
+    @artist = artist
+    artist.add_song(self)
     #.add_song gives a song an artist and shovels the instance of that song into the @songs array of the artist
     # @artist = new_artist # this provides the song with its artist but the artist instance still does not know its song.
     # new_artist.songs = self
