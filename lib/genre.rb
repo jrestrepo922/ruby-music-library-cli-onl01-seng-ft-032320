@@ -22,7 +22,7 @@ class Genre
 
   def self.create(name)
     new_genre = self.new(name)  # creates an new instance of a song
-    new_genre.save # the new song is an intance and has an instance method of save witch shovel the intance into the Class variable 
-    new_genre # returns the new song. 
+    new_genre.save # the new song is an intance and has an instance method of save witch shovel the intance into the Class variable
+    new_genre # returns the new song.
   end
 end
