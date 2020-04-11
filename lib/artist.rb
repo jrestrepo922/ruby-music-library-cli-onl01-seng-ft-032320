@@ -57,7 +57,7 @@ class Artist
         nil
       else
         @new_array << song.genre
-        
+
       end
     }
     @new_array
