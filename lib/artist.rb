@@ -50,7 +50,9 @@ class Artist
   end
 
   def genres
-    Genre.all
+    #Genre.all
+
+
     # @new_array = []
     # songs.each { |song|
     #   if @new_array.include?(song.genre)
