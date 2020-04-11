@@ -48,8 +48,8 @@ class Artist
     end
   end
 
-  def genres 
+  def genres
     Genre.all
-  end 
-  
+  end
+
 end
