@@ -39,7 +39,7 @@ class Artist
     if song.artist
 
     else
-    song.artist = self if song.artist
+    song.artist = self
     end
   end
 end
