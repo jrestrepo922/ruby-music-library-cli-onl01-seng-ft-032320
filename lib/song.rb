@@ -30,6 +30,6 @@ class Song
   end
 
   def artist=(artist_name)
-    @artist = artist_name 
-  end 
+    @artist = artist_name
+  end
 end
