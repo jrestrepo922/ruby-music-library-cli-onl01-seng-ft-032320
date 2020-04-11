@@ -51,7 +51,7 @@ class Artist
 
   def genres
     Genre.all
-    Song.all
+    Song.all.collect {|song| song.genre if song.artist == self}
 
 
     # @new_array = []
