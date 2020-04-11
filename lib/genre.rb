@@ -31,4 +31,9 @@ class Genre
     @songs
   end
 
+  def songs=(new_song)
+    songs << new_song
+  end 
+    
+
 end
