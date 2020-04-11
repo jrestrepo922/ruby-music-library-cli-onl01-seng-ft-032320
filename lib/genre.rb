@@ -38,9 +38,14 @@ class Genre
   def artists
     @new_array_artist = []
     Song.all.each { |song|  #songs intances have name, instances of artist and instance of genre.
-      if song.genre == self
-        @new_array_artist << song.artist
+      if @new_array_artist.include?(song.artist)
+        nil
+      else
+        if song.genre == self
+          @new_array_artist << song.artist
+        end
       end
+
     }
 
     @new_array_artist
