@@ -54,19 +54,21 @@ class Artist
   end
 
   def genres
+
+    self.songs.map{ |song| song.genre}
     #Genre.all
-    binding.pry
-    @new_array = []
-    Song.all.each {|song|   #songs intances have name, instances of artist and instance of genre
-      if @new_array.include?(song.genre)
-        nil
-      else
-        if song.artist == self  #if the songs artirst is equal to this artist instance than true
-          @new_array << song.genre
-        end
-      end
-    }
-    @new_array
+    # binding.pry
+    # @new_array = []
+    # Song.all.each {|song|   #songs intances have name, instances of artist and instance of genre
+    #   if @new_array.include?(song.genre)
+    #     nil
+    #   else
+    #     if song.artist == self  #if the songs artirst is equal to this artist instance than true
+    #       @new_array << song.genre
+    #     end
+    #   end
+    # }
+    # @new_array
   end
 
 end
