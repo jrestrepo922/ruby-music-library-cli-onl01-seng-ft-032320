@@ -27,7 +27,11 @@ class Artist
     new_artist
   end
 
-  def songs
+  def songs # getter method for songs
     @songs
+  end
+
+  def songs=(new_song)
+    @songs << new_song
   end
 end
