@@ -52,8 +52,8 @@ class Song
   def find_or_create_by_name(song_name)
     if self.find_by_name(song_name).include?(self)
       self.find_by_name(song_name)
-    else 
+    else
       new_song = Song.new(song_name)
-      new_song 
-    end 
+      new_song
+    end
 end
