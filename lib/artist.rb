@@ -50,8 +50,18 @@ class Artist
   end
 
   def genres
-    Genre.all
-    Song.all.collect {|song| song.genre if song.artist == self}
+    #Genre.all
+
+    @new_array = []
+    Song.all.each {|song| 
+      if @new_array.include?(song.genre) 
+        nil
+      else 
+        if song.artist == self  #if the songs artirst is equal to this artist instance than true
+          @new_array << song.genre
+        end 
+      end 
+    }
 
 
     # @new_array = []
