@@ -62,19 +62,6 @@ class Artist
         end
       end
     }
-
-
-    # @new_array = []
-    # songs.each { |song|
-    #   if @new_array.include?(song.genre)
-    #     nil
-    #   else
-    #     @new_array << song.genre
-    #
-    #   end
-    # }
-    # @new_array
-    #binding.pry
     @new_array
   end
 
