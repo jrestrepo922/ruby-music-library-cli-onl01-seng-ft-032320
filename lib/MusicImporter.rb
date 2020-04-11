@@ -13,4 +13,11 @@ class MusicImporter
     @files = Dir.entries(@path).select { |song| !File.directory?(song) && song.end_with?(".mp3")}
     #binding.pry
   end
+
+  def import
+    self.files.each {|filename|
+      Song.create_from_filename(filename)
+    }
+  end
+
 end
