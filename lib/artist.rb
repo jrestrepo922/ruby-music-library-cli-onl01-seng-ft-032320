@@ -32,9 +32,9 @@ class Artist
     @songs
   end
 
-  def songs=(new_song) # Setter method for songs that shovels into the @songs instance variable
-    @songs << new_song
-  end
+  # def songs=(new_song) # Setter method for songs that shovels into the @songs instance variable
+  #   @songs << new_song
+  # end
 
   def add_song(song)  #instance of a song
     if song.artist
@@ -44,7 +44,7 @@ class Artist
       if songs.include?(song)
 
       else
-        self.songs=(song)  # calling the artist instance setter method to shovel the instance of a song into the @songs array. THe artist has added this song to a list of songs
+        self.songs << song  # calling the artist instance setter method to shovel the instance of a song into the @songs array. THe artist has added this song to a list of songs
       end
     end
   end
