@@ -22,7 +22,7 @@ class Artist
 
   def self.create(name)
     new_artist = self.new(name)  # creates an new instance of a song
-    new_artist.save # the new song is an intance and has an instance method of save witch shovel the intance into the Class variable
-    new_artist # returns the new song.
+    new_artist.save 
+    new_artist 
   end
 end
