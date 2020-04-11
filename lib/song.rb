@@ -8,7 +8,7 @@ class Song
   def initialize(name, artist =  nil, genre = nil )
     @name = name
     self.artist = artist if artist # this states that the instance setter method .artist will only be run if artist equals true (nil will make it false) so default argument will make it false and not run.
-    self.genre = genre if genre 
+    self.genre = genre if genre
     save
   end
 
@@ -36,6 +36,6 @@ class Song
   end
 
   def genre=(genre)
-    @genre = genre 
-  end 
+    @genre = genre
+  end
 end
