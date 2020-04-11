@@ -50,7 +50,8 @@ class Artist
   end
 
   def genres
-    #Genre.all
+    Genre.all
+    Song.all
 
 
     # @new_array = []
@@ -63,7 +64,7 @@ class Artist
     #   end
     # }
     # @new_array
-    # #binding.pry
+    binding.pry
   end
 
 end
