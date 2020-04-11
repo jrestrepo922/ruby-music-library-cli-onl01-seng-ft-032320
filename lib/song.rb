@@ -48,6 +48,6 @@ class Song
   def self.find_by_name
     self.all
     binding.pry
-  end 
-  
+  end
+
 end
