@@ -21,8 +21,8 @@ class Song
   end
 
   def self.create(name)
-    new_song = self.new(name)
-    new_song.save
-    new_song
+    new_song = self.new(name)  # creates an new instance of a song
+    new_song.save # the new song is an intance and has an instance method of save witch shovel the intance into the Class variable 
+    new_song # returns the new song. 
   end
 end
