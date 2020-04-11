@@ -74,7 +74,7 @@ class Artist
     #   end
     # }
     # @new_array
-    binding.pry
+    #binding.pry
   end
 
 end
