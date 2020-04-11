@@ -5,9 +5,10 @@ class Song
 
   @@all = []
 
-  def initialize(name, artist =  nil )
+  def initialize(name, artist =  nil, genre = nil )
     @name = name
     self.artist = artist if artist # this states that the instance setter method .artist will only be run if artist equals true (nil will make it false) so default argument will make it false and not run.
+    self.genre = genre if genre 
     save
   end
 
@@ -32,7 +33,9 @@ class Song
   def artist=(artist) # intance of an artist
     @artist = artist
     artist.add_song(self) #.add_song gives a artist a song and shovels the instance of that song into the @songs array of the artist
-
-
   end
+
+  def genre=(genre)
+    @genre = genre 
+  end 
 end
