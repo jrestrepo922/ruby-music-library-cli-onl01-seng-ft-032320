@@ -31,7 +31,8 @@ class Artist
     @songs
   end
 
-  def songs=(new_song)
+  def songs=(new_song) # Setter method for songs that shovels into the @songs instance variable
     @songs << new_song
   end
+
 end
