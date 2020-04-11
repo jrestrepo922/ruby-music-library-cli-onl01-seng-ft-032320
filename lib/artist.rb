@@ -39,7 +39,7 @@ class Artist
     if song.artist
 
     else
-    song.artist = self  if song.artist # the song instance artist property was given an instace of the artist. The song knows it has an artist
+    song.artist = self  # the song instance artist property was given an instace of the artist. The song knows it has an artist
       if songs.include?(song)
 
       else
