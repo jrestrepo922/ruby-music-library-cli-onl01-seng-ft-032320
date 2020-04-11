@@ -38,7 +38,5 @@ class Artist
   def add_song(song)  #instance of a song
 
     self.songs=(song)
-
-
   end
 end
