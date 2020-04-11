@@ -1,4 +1,5 @@
 require 'pry'
+
 class MusicImporter
   attr_accessor :path
 
@@ -10,5 +11,6 @@ class MusicImporter
 
   def files
     @files = Dir.entries(@path).select { |song| !File.directory?(song) && song.end_with?(".mp3")}
+    binding.pry
   end
 end
