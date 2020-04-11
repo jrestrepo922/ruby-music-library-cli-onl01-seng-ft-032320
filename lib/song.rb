@@ -28,4 +28,8 @@ class Song
     new_song.save # the new song is an intance and has an instance method of save witch shovel the intance into the Class variable
     new_song # returns the new song.
   end
+
+  def artist=(artist_name)
+    @artist = artist_name 
+  end 
 end
