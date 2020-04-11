@@ -35,7 +35,8 @@ class Song
     artist.add_song(self) #.add_song gives a artist a song and shovels the instance of that song into the @songs array of the artist
   end
 
-  def genre=(genre)
+  def genre=(genre) # this is talking an genre instance
     @genre = genre
+    genre.songs = self
   end
 end
