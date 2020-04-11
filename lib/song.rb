@@ -41,5 +41,6 @@ class Song
 
     else
       genre.songs = self
+    end 
   end
 end
