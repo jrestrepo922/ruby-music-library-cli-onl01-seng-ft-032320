@@ -40,7 +40,7 @@ class MusicLibraryController
         play_song
       end
     end
-    
+
     self.call if input !="exit"
 
   end
