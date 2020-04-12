@@ -27,9 +27,14 @@ class MusicLibraryController
 
     self.call if input !="exit"
 
-
-
-
   end
+
+
+  def list_songs
+
+    Song.all
+    binding.pry
+  end
+
 
 end
