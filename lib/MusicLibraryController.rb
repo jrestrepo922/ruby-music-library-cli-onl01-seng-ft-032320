@@ -10,9 +10,9 @@ class MusicLibraryController
   end
 
   def call
+    input = gets.strip.downcase
 
-
-    while input != "exit"
+    if input != "exit"
 
     puts "Welcome to your music library!"
     puts "To list all of your songs, enter 'list songs'."
@@ -24,7 +24,8 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
 
-    input = gets.strip.downcase
+
+
     end
 
 
