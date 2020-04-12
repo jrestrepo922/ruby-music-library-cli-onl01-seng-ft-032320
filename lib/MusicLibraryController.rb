@@ -25,7 +25,7 @@ class MusicLibraryController
 
     input = gets.strip.downcase
 
-
+    self.call if input !="exit"
 
 
 
