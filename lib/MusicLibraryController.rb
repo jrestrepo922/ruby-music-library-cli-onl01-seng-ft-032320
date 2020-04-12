@@ -39,7 +39,7 @@ class MusicLibraryController
       when "play song"
         play_song
       end
-    end
+    
 
     self.call if input !="exit"
 
