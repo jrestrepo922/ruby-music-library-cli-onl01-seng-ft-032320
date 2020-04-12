@@ -28,7 +28,7 @@ class MusicLibraryController
     self.call if input !="exit"
 
 
-    binding.pry
+    
 
   end
 
